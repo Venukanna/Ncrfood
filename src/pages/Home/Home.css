@@ -1,0 +1,476 @@
+/* src/pages/Home/Home.css
+.home-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hero-banner {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    padding: 2rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  .shop-now-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .shop-now-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  .featured-products {
+    margin: 4rem 2rem;
+  }
+  
+  .featured-products h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  .section-subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+  }
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .view-all-container {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .view-all-btn {
+    background-color: transparent;
+    color: #2c3e50;
+    border: 2px solid #2c3e50;
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .view-all-btn:hover {
+    background-color: #2c3e50;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-banner {
+      height: 400px;
+    }
+    
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+    
+    .hero-content p {
+      font-size: 1rem;
+    }
+    
+    .featured-products {
+      margin: 4rem 1rem;
+    }
+    
+    .featured-products h2 {
+      font-size: 1.8rem;
+    }
+  } */
+
+  /* src/pages/Home/Home.css */
+
+/* Base Styles */
+.home-container {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  max-width: 1950px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Banner Section */
+.hero-banner {
+  height: 80vh;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 0 20px;
+  animation: fadeInUp 1s ease;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero-cta {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Button Styles */
+.shop-now-btn, .view-all-btn, .primary-btn, .secondary-btn, .learn-more-btn {
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.primary-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.primary-btn:hover {
+  background-color: #3e8e41;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.secondary-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.view-all-btn {
+  background-color: #333;
+  color: white;
+  margin-top: 30px;
+}
+
+.view-all-btn:hover {
+  background-color: #555;
+  transform: translateY(-2px);
+}
+
+/* Health Benefits Section */
+.health-benefits {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin: 80px 0;
+  padding: 40px 0;
+}
+
+.benefits-content {
+  flex: 1;
+}
+
+.benefits-image {
+  flex: 1;
+}
+
+.benefits-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.benefits-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.benefits-list {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.benefits-list li {
+  margin-bottom: 10px;
+  position: relative;
+  list-style-type: none;
+  padding-left: 30px;
+}
+
+.benefits-list li:before {
+  content: "✓";
+  color: #4CAF50;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* Featured Products Section */
+.featured-products {
+  margin: 80px 0;
+  text-align: center;
+}
+
+.section-header {
+  margin-bottom: 40px;
+}
+
+.featured-products h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Expert Advice Section */
+.expert-advice {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin: 80px 0;
+  padding: 60px 0;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.expert-image {
+  flex: 1;
+  padding: 0 40px;
+}
+
+.expert-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.expert-content {
+  flex: 1;
+  padding: 0 40px;
+}
+
+.expert-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.expert-content p {
+  margin-bottom: 20px;
+}
+
+.expert-name {
+  font-style: italic;
+  color: #666;
+}
+
+.learn-more-btn {
+  background-color: #2c3e50;
+  color: white;
+  margin-top: 20px;
+}
+
+.learn-more-btn:hover {
+  background-color: #1a252f;
+}
+
+/* Promo Banner */
+.promo-banner {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 60px 0;
+}
+
+.promo-banner h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.promo-banner p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.promo-banner strong {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .health-benefits, .expert-advice {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-cta {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .products-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  
+  .health-benefits, .expert-advice {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-banner {
+    height: 70vh;
+    min-height: 400px;
+  }
+  
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  
+  .featured-products h2, .benefits-content h2, .expert-content h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* View All Container */
+.view-all-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.category-filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.filter-btn {
+  padding: 0.6rem 1.2rem;
+  background-color: #eee;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+.filter-btn.active {
+  background-color: #5c9c38;
+  color: white;
+}
+.cart-toast {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  z-index: 2000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeInOut 2s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-10px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-10px); }
+}

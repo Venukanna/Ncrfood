@@ -1,0 +1,88 @@
+/* src/pages/About/About.css */
+.about-page {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .about-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url('/image/about-banner.jpg')
+    center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem;
+  }
+  
+  .about-hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-hero-content p {
+    font-size: 1.3rem;
+    margin: 0;
+  }
+  
+  .about-content {
+    padding: 0 2rem 3rem;
+  }
+  
+  .about-mission,
+  .about-difference {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+  }
+  
+  .about-mission h2,
+  .about-difference h2 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  
+  .about-mission h2::after,
+  .about-difference h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #e74c3c;
+  }
+  
+  .about-mission p,
+  .about-difference p {
+    color: #34495e;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .about-hero {
+      height: 300px;
+    }
+    
+    .about-hero-content h1 {
+      font-size: 2rem;
+    }
+    
+    .about-hero-content p {
+      font-size: 1.1rem;
+    }
+    
+    .about-content {
+      padding: 0 1rem 2rem;
+    }
+    
+    .about-mission h2,
+    .about-difference h2 {
+      font-size: 1.5rem;
+    }
+  }

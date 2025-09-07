@@ -1,0 +1,22 @@
+/* responsive.css */
+@media (max-width: 768px) {
+    
+    .container {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .hero-title {
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .nav-links {
+      display: none;
+    }
+  
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
