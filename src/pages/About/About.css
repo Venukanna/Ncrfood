@@ -6,7 +6,7 @@
   
   .about-hero {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-    url('/image/about-banner.jpg')
+    url('/images/about-banner.jpg')
     center/cover no-repeat;
     height: 400px;
     display: flex;
