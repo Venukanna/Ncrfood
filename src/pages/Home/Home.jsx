@@ -36,7 +36,7 @@ const Home = () => {
       name: 'Chickpea Protein Snack',
       price: 24.99,
       originalPrice: 29.99,
-      image: 'Chickpea Proteinn Snack.png',
+      image: 'Chickpea Protein Snack.png',
       category: 'snacks',
       description: 'Crunchy roasted chickpeas...',
       features: ['12g plant protein', 'Vegan', '3 flavors', 'No preservatives'],
