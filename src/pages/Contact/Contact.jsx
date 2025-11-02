@@ -46,7 +46,7 @@ const Contact = () => {
             <h2>Our Details</h2>
             <div className="contact-info-item">
               <FaPhone className="contact-icon" />
-              <span>+91 7601095128</span>
+              <span>+91 9963662332</span>
             </div>
             <div className="contact-info-item">
               <FaEnvelope className="contact-icon" />

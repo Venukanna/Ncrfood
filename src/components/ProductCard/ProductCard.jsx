@@ -115,7 +115,7 @@ const ProductCard = ({ product, onQuickView, onAddToCart, showRating = false }) 
     
     // If it's a local file path (just filename)
     if (typeof imagePath === 'string') {
-      return `/images/products/${imagePath}`;
+      return `/images/${imagePath}`;
     }
     
     // Fallback
